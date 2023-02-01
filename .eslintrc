@@ -1,0 +1,32 @@
+{
+  "extends": ["react-app", "prettier"],
+  "rules": {
+    "react/jsx-sort-props": [
+      "error",
+      {
+        "callbacksLast": true,
+        "shorthandFirst": true,
+        "multiline": "ignore",
+        "ignoreCase": false,
+        "noSortAlphabetically": false,
+        "reservedFirst": false,
+        "locale": "auto"
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "type",
+          "builtin",
+          "external",
+          "internal",
+          ["parent", "sibling", "index"],
+          "object"
+        ],
+        "newlines-between": "never",
+        "alphabetize": { "order": "asc", "caseInsensitive": true }
+      }
+    ]
+  }
+}
